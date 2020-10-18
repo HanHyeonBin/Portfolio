@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linMapView">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left|top">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:elevation="20dp"
+                android:id="@+id/edtSearch"></EditText>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="검색"
+                android:elevation="20dp"
+                android:id="@+id/btnSearch"
+                android:layout_weight="1"></Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="right|bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지도 확대"
+                android:id="@+id/btnZoomIn"
+                android:background="#123456"
+                android:textColor="#fff"
+                android:elevation="20dp"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지도 축소"
+                android:id="@+id/btnZoomOut"
+                android:background="#123456"
+                android:textColor="#fff"
+                android:elevation="20dp"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재 위치"
+                android:id="@+id/btnMyLocation"
+                android:background="#123456"
+                android:textColor="#fff"
+                android:elevation="20dp"
+                android:layout_margin="10dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+        
+        
+    </FrameLayout>
+
+</LinearLayout>
