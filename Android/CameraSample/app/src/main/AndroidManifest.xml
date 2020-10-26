@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.camerasample">
+
+    <uses-permission android:name="android.permission.CAMERA"/> <!--카메라 기능 설치시 허가권 확인-->
+    <uses-feature android:name="android.hardware.camera"/> <!--카메라 기능 실행 시 접근 권한-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!--SD 저장 권한 확인-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/> <!--오디오 녹음 권한-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!--위치 태그를 위한 권한-->
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".CheckPermissionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
