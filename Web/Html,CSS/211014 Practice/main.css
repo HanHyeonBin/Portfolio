@@ -1,0 +1,17 @@
+a{
+    font-weight: bold;
+    width: 100px;
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+}
+
+a:hover{
+    background: orange;
+}
+
+h2{
+    margin bottom: 400px;
+}
