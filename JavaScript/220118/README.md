@@ -1,3 +1,11 @@
+- then 함수에서 다시 프로미스 객체를 리턴하는 방법을 통해 체이닝하면, 비동기 작업을 순차적으로 아래로 표현할 수 있다.
+
+- value가 프로미스 객체인지 아닌지 알 수 없는 경우, 사용하면 연결된 then 메서드를 실행한다.
+- value가 프로미스 객체면, resolve 된 then 메서드를 실행한다.
+- value가 프로미스 객체가 아니면, value를 인자로 보내면서 then 메서드를 실행한다.
+
+- Promsie.reject를 사용하면, catch 로 연결된 rejected 상태로 변경된다
+
 # finally
 
 - fullfilled 되거나 rejected 된 후에 최종적으로 실행할 것이 있다면, .finally()를 설정하고, 함수를 인자로 넣어준다.
@@ -7,13 +15,7 @@
 - 비동기 작업을 할때, callback 함수를 인자로 넣어 로직이 끝나면 callback 함수를 호출한다.
 - 위 경우 함수가 아래로 진행되지 않고, callback 함수 안으로 진행된다.
 
-- then 함수에서 다시 프로미스 객체를 리턴하는 방법을 통해 체이닝하면, 비동기 작업을 순차적으로 아래로 표현할 수 있다.
-
-- value가 프로미스 객체인지 아닌지 알 수 없는 경우, 사용하면 연결된 then 메서드를 실행한다.
-- value가 프로미스 객체면, resolve 된 then 메서드를 실행한다.
-- value가 프로미스 객체가 아니면, value를 인자로 보내면서 then 메서드를 실행한다.
-
-- Promsie.reject를 사용하면, catch 로 연결된 rejected 상태로 변경된다.
+.
 
 # Promise.all
 
