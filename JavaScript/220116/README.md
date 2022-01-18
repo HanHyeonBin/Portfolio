@@ -13,7 +13,9 @@
 # Promise
 
 - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise
-<p> executor 함수는 resoleve와 reject 를 인자로 가진다. (resolve, reject) => {...}resolve와 reject는 함수이다. resolve(), reject()
+- executor 함수는 resoleve와 reject 를 인자로 가진다.
+  (resolve, reject) => {...}resolve와 reject는 함수이다.
+  resolve(), reject()
 
 - 생성자를 통해서 프로미스 객체를 만드는 순간 pending(대기) 상태라고 한다.
 - executor 함수 인자 중 하나인 resolve 함수를 실행하면, fulfilled(이행) 상태가 된다.
