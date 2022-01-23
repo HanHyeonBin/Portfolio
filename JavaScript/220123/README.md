@@ -1,6 +1,6 @@
 # async function과 await
 
-- https://developer.mozilla.org/kodocs/Web/JavaScript/Reference/Statements/async_function
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 
 - async function 함수이름() {}
 - const 함수이름 = async() => {}
