@@ -1,12 +1,13 @@
 import React from "react";
 
-function Hello({ color, name }) {
+function Hello({ color, name, isSpecial }) {
   return (
     <div
       style={{
         color,
       }}
     >
+      {isSpecial && <b>*</b>}
       Hello World {name}
     </div>
   );
