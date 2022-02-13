@@ -1,7 +1,19 @@
 import React from "react";
 
-function Hello() {
-  return <div>Hello World</div>;
+function Hello({ color, name }) {
+  return (
+    <div
+      style={{
+        color,
+      }}
+    >
+      Hello World {name}
+    </div>
+  );
 }
+
+Hello.defaultProps = {
+  name: "no name",
+};
 
 export default Hello;
