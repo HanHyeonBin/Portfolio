@@ -1,15 +1,28 @@
-import React, { useState } from "react";
+import React, { useReducer } from "react";
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "INCREMENT": //action 이름 직접 설정 가능
+      return state + 1;
+    case "DECREMENT":
+      return state - 1;
+    default:
+      throw new Error("Unhandled action");
+  }
+}
 
 function Counter() {
-  const [number, setNumber] = useState(0);
+  const [number, dispatch] = useReducer(reducer, 0);
   const onIncrease = () => {
-    console.log("+1");
-    setNumber((prevNumber) => prevNumber + 1);
+    dispatch({
+      type: "INCREMENT",
+    });
   };
 
   const onDecrease = () => {
-    console.log("-1");
-    setNumber((prevNumber) => prevNumber - 1);
+    dispatch({
+      type: "DECREMENT",
+    });
   };
   return (
     <div>
