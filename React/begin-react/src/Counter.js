@@ -12,7 +12,7 @@ function reducer(state, action) {
 }
 
 function Counter() {
-  const [number, dispatch] = useReducer(reducer, 0);
+  const [number, dispatch] = useReducer(reducer, 0); // reducer 함수, 0은 초기 값
   const onIncrease = () => {
     dispatch({
       type: "INCREMENT",
