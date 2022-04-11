@@ -5,9 +5,12 @@ import React, {
   useCallback,
   createContext,
 } from "react";
+import produce from "immer";
 import UserList from "./UserList";
 import CreateUser from "./CreateUser";
 import useInputs from "./useInputs";
+
+window.produce = produce;
 
 function counActiveUsers(users) {
   console.log("활성 사용자 수를 세는중...");
